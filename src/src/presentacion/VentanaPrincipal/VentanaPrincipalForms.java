@@ -1,4 +1,4 @@
-package src.presentacion.VentanaPrincipal;
+package src.src.presentacion.VentanaPrincipal;
 
 import src.presentacion.ColsultarUsuarios.ConsultarUsuariosForm;
 import src.presentacion.RegistroUsuario.RegistroDeUsuarioForm;
@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 /**
  * Clase para la Venta Principal de la aplicación.
  */
-public class VentanaPrincipalForm extends JFrame {
+public class VentanaPrincipalForms extends JFrame {
     private JPanel pnlPrincipal;
 
     /**
@@ -63,7 +63,7 @@ public class VentanaPrincipalForm extends JFrame {
      *
      * Complejidad Temporal: O(1) Tiempo Constante.
      */
-    public VentanaPrincipalForm() {
+    public VentanaPrincipalForms() {
         this.inicializarMenu();
 
         // Obtener el tamaño de la pantalla

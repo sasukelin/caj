@@ -1,4 +1,4 @@
-package src.presentacion.RegistroUsuario;
+package src.src.presentacion.RegistroUsuario;
 
 import src.logicaNegocio.BaseDeDatos;
 import src.logicaNegocio.Usuario;
@@ -17,8 +17,8 @@ public class RegistroDeUsuarioForm extends JFrame {
     private JTextField txtSaldo;
     private JTextField txtContraseña;
     private JButton btnGuardar;
-    private JLabel lblNombre;
-    private JLabel lblSaldo;
+    private JLabel lblNombre_De_Usuari;
+    private JLabel lblSaldo_Inicial;
     private JLabel lblContraseña;
 
 
@@ -50,18 +50,18 @@ public class RegistroDeUsuarioForm extends JFrame {
              * Complejidad Temporal: O(1) Tiempo Constante.
              */
             public void actionPerformed(ActionEvent e) {
-                String nombre = txtNombre.getText();
-                double saldo = txtSaldo.getText();
+                String nombre_de_usuario = txtNombre.getText();
+                String dinero = txtSaldo.getText();
                 String contraseña = txtContraseña.getText();
+                double lblSaldo_Inicial = Double.parseDouble(dinero);
 
-
-                Usuario usuario = new Usuario(nombre, saldo, contraseña);
+                Usuario usuario = new Usuario(nombre_de_usuario, lblSaldo_Inicial, contraseña);
 
                 BaseDeDatos.agregarUsuarios(usuario);
 
                 String mensaje = "Tus datos son: \n" +
-                                 "Nombre De La Cuenta: " + nombre + "\n" +
-                                 "Saldo: " + saldo + "\n" +
+                                 "Nombre De La Cuenta: " + nombre_de_usuario + "\n" +
+                                 "Saldo: " + lblSaldo_Inicial + "\n" +
                                  "Contraseña: " + contraseña;
 
                 JOptionPane.showMessageDialog(btnGuardar, mensaje);

@@ -1,4 +1,4 @@
-package src.presentacion.ColsultarUsuarios;
+package src.src.presentacion.ColsultarUsuarios;
 
 import src.logicaNegocio.BaseDeDatos;
 import src.logicaNegocio.Usuario;
@@ -9,7 +9,8 @@ import javax.swing.table.DefaultTableModel;
 /**
  * Clase para la ventana de Consultar Personas
  */
-public class ConsultarUsuariosForm extends JFrame {
+public class ConsultarUsuariosForm
+        extends JFrame {
     private JPanel pnlPrincipal;
     private JLabel lblUsuario;
 

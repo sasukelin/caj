@@ -1,6 +1,6 @@
-package src.presentacion;
+package src.src.presentacion;
 
-import src.presentacion.VentanaPrincipalForm;
+import src.presentacion.VentanaPrincipal.VentanaPrincipalForms;
 
 /**
  * Clase Principal de la aplicación
@@ -14,6 +14,6 @@ public class Principal {
      */
     public static void main(String[] args) {
         //CrearPersonaForm ejemploGridLayout = new CrearPersonaForm();
-        VentanaPrincipalForm ventanaPrincipalForm = new VentanaPrincipalForm();
+        VentanaPrincipalForms ventanaPrincipalForm = new VentanaPrincipalForms();
     }
 }

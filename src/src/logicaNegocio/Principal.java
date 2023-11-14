@@ -1,4 +1,4 @@
-package src.logicaNegocio;
+package src.src.logicaNegocio;
 
 import java.util.Scanner;
 
